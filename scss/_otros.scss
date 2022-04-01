@@ -1,0 +1,33 @@
+a{
+    text-decoration: none; 
+    color: rgb(23, 23, 23);
+}
+a:hover{
+    color:red;
+}
+
+.menu{
+    font-size: 1.5rem;
+}
+
+.estiloTitulos{
+    color:red;
+    font-style: oblique;
+    text-align: center;
+}
+
+@mixin estiloIconos($tamanioIcono, $colorIcono, $hoverIcono){
+    font-size:$tamanioIcono;
+    color:$colorIcono;
+    &:hover{
+        color:$hoverIcono;
+    }
+}
+@mixin estiloBotones($colorLetra, $colorBoton, $hoverBoton, $letraHover){
+    color:$colorLetra;
+    background-color: $colorBoton;
+    &:hover{
+        background-color: $hoverBoton;
+        color:$letraHover;
+    }
+}

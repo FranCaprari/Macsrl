@@ -1,0 +1,54 @@
+footer {
+    border-top: solid 2px;
+}
+
+.footer{
+    display:grid;
+    background-color: rgb(177, 122, 22);
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "telefono ig horarios"
+                         "copy copy copy";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 5rem;
+    &__copy{
+        border-top: solid 0.1rem;
+        grid-area:copy;
+        text-align: center;
+    }
+}
+.footer__logo img{
+    width: 5rem;
+}
+.footer__lista ul{
+    list-style: none;
+}
+#footer__redes__ig{
+    @include estiloIconos(1.5rem, black, red);
+}
+#footer__redes__git{
+    @include estiloIconos(1.5rem, black, blue);
+}
+
+
+@media (max-width: 600px){
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+        grid-template-areas: "telefono telefono"
+                             "icono lista"
+                             "copy copy";
+        &__lista{
+            grid-area:lista;
+        }
+        &__logo{
+            grid-area:icono;
+        }
+        &__telefono{
+            grid-area:telefono;
+        }
+    }
+}

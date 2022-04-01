@@ -1,0 +1,24 @@
+
+.tituloNosotros{
+    text-align: center;
+    padding:2rem;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+.nosotros{
+    display:flex;
+    padding-bottom: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+.nosotros__foto__proyecto{
+    width: 100%;
+}
+.nosotros__contactos{
+    display:block;
+}
+.nosotros__contacto__icon{
+    font-size:4rem;
+}
