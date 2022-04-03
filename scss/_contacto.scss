@@ -10,14 +10,14 @@
     justify-content: center;
     text-align: center;
     row-gap: 3rem;
+    &__contactos1{
+        grid-area:numero;
+    }
+    &__contactos2{
+        grid-area:numero2;
+    }
 }
 
-.contacto__contactos1{
-    grid-area:numero;
-}
-.contacto__contactos2{
-    grid-area:numero2;
-}
 label{
     font-size: 1.2rem;
 }
