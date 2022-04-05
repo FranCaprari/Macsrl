@@ -4,14 +4,17 @@
 }
 .contacto{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "numero numero2"
-                         "form form";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "numero email numero2"
+                         "form form form";
     justify-content: center;
     text-align: center;
     row-gap: 3rem;
     &__contactos1{
         grid-area:numero;
+    }
+    &__email{
+        grid-area:email;
     }
     &__contactos2{
         grid-area:numero2;
@@ -89,7 +92,8 @@ form{
     .contacto{
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "numero" 
+        grid-template-areas: "numero"
+                             "email" 
                              "numero2"
                              "form";
         justify-content: center;
@@ -98,6 +102,9 @@ form{
     }
     .contacto__contactos1{
         grid-area:numero;
+    }
+    .contacto__email{
+        grid-area:email;
     }
     .contacto__contactos2{
         grid-area:numero2;

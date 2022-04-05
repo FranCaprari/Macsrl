@@ -23,7 +23,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: red; }
+  color: white; }
 
 .main__logo {
   width: 5rem; }
@@ -143,13 +143,15 @@ a:hover {
 
 .contacto {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "numero numero2" "form form";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "numero email numero2" "form form form";
   justify-content: center;
   text-align: center;
   row-gap: 3rem; }
   .contacto__contactos1 {
     grid-area: numero; }
+  .contacto__email {
+    grid-area: email; }
   .contacto__contactos2 {
     grid-area: numero2; }
 
@@ -217,12 +219,14 @@ form {
   .contacto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "numero"  "numero2" "form";
+    grid-template-areas: "numero" "email"  "numero2" "form";
     justify-content: center;
     text-align: center;
     row-gap: 3rem; }
   .contacto__contactos1 {
     grid-area: numero; }
+  .contacto__email {
+    grid-area: email; }
   .contacto__contactos2 {
     grid-area: numero2; }
   .formSection {
